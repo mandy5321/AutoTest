@@ -1,0 +1,36 @@
+[
+  {
+    "description":"这是一个带cookies信息的get请求",
+    "request":{
+      "uri":"/getcookies",
+      "method":"get",
+      "cookies":{
+        "login":"success"
+      }
+    },
+    "response":{
+      "text":"zheshi"
+    }
+  },
+  {
+    "description":"这是一个带cookies的post请求",
+    "request":{
+      "uri":"/post/with/cookies",
+      "method":"post",
+      "cookies":{
+        "login":"success"
+      },
+      "json":{
+        "name":"huhansan",
+        "age":"18"
+      }
+    },
+    "response":{
+      "status":"200",
+      "json":{
+        "huhansan":"laile",
+        "status":"1"
+      }
+    }
+  }
+]
