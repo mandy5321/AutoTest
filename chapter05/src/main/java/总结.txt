@@ -1,0 +1,26 @@
+@Test 测试用例标签
+@BeforeSuite 最先执行 在测试套件中使用
+@AfterSuite  最后执行
+@BeforeTest 测试用例执行前运行 一个文件中只运行一次 第二个执行
+@AfterTest  测试用例执行后执行
+
+@BeforeClass 类执行前执行 每一个class执行一次
+@AfterClass  类执行后执行
+
+@BeforeMethod 方法执行前执行 每个方法执行一次
+@AfterMethod  方法执行后执行
+
+@BeforeGroup("test") 与@test(groups = "test") 结合使用
+@AfterGroup
+
+测试套件xml配置：
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suite1">
+    <test name="test1">
+        <classes>
+            <class name=""/>
+        </classes>
+    </test>
+        <classes>
+        </classes>
+</suite>

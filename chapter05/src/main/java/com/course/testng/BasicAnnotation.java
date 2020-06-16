@@ -6,6 +6,15 @@ import org.testng.annotations.*;
  * Created by zhangjie on 2020/6/11.
  */
 public class BasicAnnotation {
+
+    @BeforeTest
+    public void beforeTest(){
+        System.out.println("BeforTest");
+    }
+    @AfterTest
+    public void afterTest(){
+        System.out.println("AfterTest");
+    }
     @Test
     public void test1(){
         System.out.println("这个是测试用例1");
